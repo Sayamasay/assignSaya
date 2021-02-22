@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qalyn-mal calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+
+
+    <h1>Qalyn-mal calculator</h1>
+    <fieldset>
+        <label for="edu">Groom's education:</label>
+        <select id="edu">
+            <option value=1></option>
+            <option value=1.5>Undergraduate degree</option>
+            <option value=1.2>College degree</option>
+            <option value=1.05>High school degree</option>
+            <option value=0.9>Middle school degree</option>
+        </select>
+        <label for="fam">Groom's family net worth:</label>
+        <select id="fam">
+            <option value=1></option>
+            <option value=2>More than 100,000$</option>
+            <option value=1.5>Between 50,000$ and 100,000$</option>
+            <option value=1.2>Less than 50,000$</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <label>Groom's skills:</label>
+        <input type="checkbox" class="skills" value=100 name="dombra"><label class="light" for="dombra">Playing on dombra</label><br>
+        <input type="checkbox" class="skills" value=200 name="cook"><label class="light" for="cook">Good cook</label><br>
+        <input type="checkbox" class="skills" value=150 name="character"><label class="light" for="character">Easygoing character</label><br>
+        <input type="checkbox" class="skills" value=100 name="sing"><label class="light" for="sing">Sings well</label>
+    </fieldset>
+    <fieldset>
+        <label>Groom's age:</label>
+        <input type="radio" id="age0" value=1.5 name="age1"><label for="age1" class="light">Between 18-23</label><br>
+        <input type="radio" id="age1" value=1.2 name="age2"><label for="age2" class="light">Between 24-27</label><br>
+        <input type="radio" id="age2" value=0.95 name="age3"><label for="age3" class="light">28+</label>
+    </fieldset>
+    <fieldset>
+        <label>Groom's reputation:</label>
+        <input type="checkbox" id="rep0" value=0.85 name="rep1"><label class="light" for="rep1">Gossips about his parent's attitude</label><br>
+        <input type="checkbox" id="rep1" value=0.9 name="rep2"><label class="light" for="rep2">Gossips about his character</label><br>
+        <input type="checkbox" id="rep2" value=200 name="rep3"><label class="light" for="rep3">General gossips around his person</label>
+
+    </fieldset>
+
+    <div id="res"></div><br>
+    <button onclick="calculate()">Calculate</button>
+
+</body>
+
+</html>
